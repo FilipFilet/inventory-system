@@ -30,6 +30,4 @@ public class Potion : IItem
             {"Effect", Effect}
         };
     }
-
-
 }

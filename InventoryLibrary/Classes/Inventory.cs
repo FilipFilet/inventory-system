@@ -35,7 +35,15 @@ public class Inventory
             var stats = item.GetItemStats();
             foreach (var stat in stats)
             {
+                  // Problem is that when displaying stats, the attributes "value" is an array so it writes system.string[]
                 Console.WriteLine($"{stat.Key}: {stat.Value}");
+            }
+
+            // Might check for type safety here
+            foreach (var attribute in (Array)stats["Rarity"])
+            {
+                Console.WriteLine(attribute);
+                
             }
             Console.WriteLine("--------------------");
         }

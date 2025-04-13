@@ -10,7 +10,7 @@ public class Bow : IItem
     public double Damage { get; }
     public double Range { get;}
 
-    // Using dependency injection to inject the rarity object.
+    // Using dependency injection to inject the rarity object
     public Bow(string itemName, IRarity rarity, double damage, double range, int durability)
     {
         ItemName = itemName;
@@ -30,6 +30,7 @@ public class Bow : IItem
     {
         return new Dictionary<string, object>
         {
+            // Change rarity to attributes, and add a rarity field. Maybe i need another solution because of problems in the Inventory class
             {"ItemName", ItemName},
             {"Rarity", Rarity.Attributes},
             {"Damage", Damage},
