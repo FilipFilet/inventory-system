@@ -21,6 +21,17 @@ public class Sword : IItem
 
     public void UseItem()
     {
-        Usage.Use();
+        Usage.Use(this);
+    }
+
+    public Dictionary<string, object> GetItemStats()
+    {
+        return new Dictionary<string, object>
+        {
+            {"ItemName", ItemName},
+            {"Rarity", Rarity.Attributes},
+            {"Durability", Durability},
+            {"Damage", Damage}
+        };
     }
 }

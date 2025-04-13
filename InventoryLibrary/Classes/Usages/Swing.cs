@@ -4,8 +4,9 @@ namespace InventoryLibrary.Classes;
 
 public class Swing : IUsage
 {
-    public void Use()
+    public void Use(IItem item)
     {
-        Console.WriteLine("Swinging at the enemy");
+        var stats = item.GetItemStats();
+        Console.WriteLine($"Swinging {stats["ItemName"]} at the enemy, dealing {stats["Damage"]} damage!");
     }
 }

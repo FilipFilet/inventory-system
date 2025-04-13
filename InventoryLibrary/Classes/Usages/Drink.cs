@@ -3,8 +3,9 @@ using InventoryLibrary.Interfaces;
 
 public class Drink : IUsage
 {
-    public void Use()
+    public void Use(IItem item)
     {
-        Console.WriteLine("Drinking the potion");
+        var stats = item.GetItemStats();
+        Console.WriteLine($"Drinking the {stats["ItemName"]}, which has a {stats["Effect"]} effect!");
     }
 }

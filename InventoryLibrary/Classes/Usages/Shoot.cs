@@ -3,8 +3,9 @@ using InventoryLibrary.Interfaces;
 
 public class Shoot : IUsage
 {
-    public void Use()
+    public void Use(IItem item)
     {
-        Console.WriteLine("Shooting at the enemy");
+        var stats = item.GetItemStats();
+        Console.WriteLine($"Shooting at the enemy with {stats["ItemName"]}, and deals {stats["Damage"]} damage!");
     }
 }

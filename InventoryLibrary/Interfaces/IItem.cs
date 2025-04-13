@@ -7,4 +7,7 @@ public interface IItem
     IUsage Usage { get; }
 
     void UseItem();
+
+    // I use a dictonary for clarity when retrieving item stats
+    Dictionary<string, object> GetItemStats();
 }

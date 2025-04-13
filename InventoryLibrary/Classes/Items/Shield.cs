@@ -20,6 +20,6 @@ public class Shield : IItem
 
     public void UseItem()
     {
-        Usage.Use();
+        Usage.Use(this);
     }
 }

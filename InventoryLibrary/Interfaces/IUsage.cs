@@ -2,5 +2,5 @@ namespace InventoryLibrary.Interfaces;
 
 public interface IUsage
 {
-    void Use();
+    void Use(IItem item);
 }
