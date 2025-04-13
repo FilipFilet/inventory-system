@@ -10,6 +10,7 @@ public class Bow : IItem
     public double Damage { get; }
     public double Range { get;}
 
+    // Using dependency injection to inject the rarity object.
     public Bow(string itemName, IRarity rarity, double damage, double range, int durability)
     {
         ItemName = itemName;
