@@ -20,4 +20,14 @@ public class Ring : IItem
     {
         Usage.Use(this);
     }
+
+    public Dictionary<string, object> GetItemStats()
+    {
+        return new Dictionary<string, object>
+        {
+            {"ItemName", ItemName},
+            {"Rarity", Rarity.Attributes},
+            {"Durability", Durability}
+        };
+    }
 }
