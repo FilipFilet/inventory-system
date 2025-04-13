@@ -1,4 +1,4 @@
-namespace InventorryLibrary.Interfaces;
+namespace InventoryLibrary.Interfaces;
 
 public interface IUsage
 {
