@@ -1,23 +1,20 @@
 using InventoryLibrary.Interfaces;
 namespace InventoryLibrary.Classes;
 
-public class Sword : IItem
+public class Ring : IItem
 {
-    public string ItemName { get;}
+    public string ItemName {get; }
     public IRarity Rarity {get;}
     public IUsage Usage { get; }
     public int Durability { get; }
-    public double Damage { get; }
 
-    public Sword(string itemName, IRarity rarity, int durability, double damage)
+    public Ring(string itemName, IRarity rarity , int durability)
     {
         ItemName = itemName;
         Rarity = rarity;
-        Usage = new Swing();
         Durability = durability;
-        Damage = damage;
+        Usage = new DoNothing();
     }
-
 
     public void UseItem()
     {

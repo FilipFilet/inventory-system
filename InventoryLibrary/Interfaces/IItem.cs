@@ -2,7 +2,9 @@ namespace InventoryLibrary.Interfaces;
 
 public interface IItem
 {
-    string ItemName { get; set; }
-    IRarity Rarity { get; set; }
-    IUsage Usage { get; set; }
+    string ItemName { get; }
+    IRarity Rarity { get; }
+    IUsage Usage { get; }
+
+    void UseItem();
 }
