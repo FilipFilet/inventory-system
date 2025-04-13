@@ -5,6 +5,6 @@ The idea cacme to me that i kinda wanted to make an inventory system, such as th
 The inventory System should consist of an Inventory Class, which holds a list of items. An item can either be  of a common, rare or legendary rarity. The common items have one unique attribute, where the rare have two and the legendary have three, otherwise they have the same properties with different values. There are of course also different kinds of items, such as swords, bows, staffs and potions, which have their own use defined by their type. Some items might even not be usable!
 
 # Class Diagram
-Based on the description and functionality, i made a class diagram, depictingi how the system should look like:
+Based on the description and functionality, i made a class diagram, depicting how the system should look like:
 
 **Insert Class Diagram**
