@@ -32,10 +32,25 @@ public class Bow : IItem
         {
             // Change rarity to attributes, and add a rarity field. Maybe i need another solution because of problems in the Inventory class
             {"ItemName", ItemName},
-            {"Rarity", Rarity.Attributes},
+            {"Rarity", Rarity.RarityName},
+            {"Attributes", Rarity.Attributes},
             {"Damage", Damage},
             {"Range", Range},
             {"Durability", Durability}
         };
+    }
+
+    public void DisplayItemStats()
+    {
+        Console.WriteLine($"Item Name: {ItemName}");
+        Console.WriteLine($"Rarity: {Rarity.RarityName}");
+        Console.WriteLine($"Damage: {Damage}");
+        Console.WriteLine($"Range: {Range}");
+        Console.WriteLine($"Durability: {Durability}");
+        Console.WriteLine("----Attributes");
+        foreach (var attribute in Rarity.Attributes)
+        {
+            Console.WriteLine($"{attribute}");
+        }
     }
 }

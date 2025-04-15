@@ -15,6 +15,6 @@ inventory.AddItem(bow);
 inventory.AddItem(potion);
 inventory.AddItem(ring);
 
-inventory.DisplayItems();
+Printer.PrintInventory(inventory);
 
 sword.UseItem();
