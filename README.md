@@ -7,4 +7,4 @@ The inventory System should consist of an Inventory Class, which holds a list of
 # Class Diagram
 Based on the description and functionality, i made a class diagram, depicting how the system should look like:
 
-**Insert Class Diagram**
+![Class Diagram](https://github.com/FilipFilet/inventory-system/raw/master/Attachments/ClassDiagram.jpg)
