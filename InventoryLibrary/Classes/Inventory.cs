@@ -21,20 +21,4 @@ public class Inventory : IInventory
         }
         Items.Remove(removeItem);
     }
-
-    // public void DisplayItems()
-    // {
-    //     if (Items.Count == 0)
-    //     {
-    //         Console.WriteLine("Inventory is empty");
-    //         return;
-    //     }
-
-    //     Console.WriteLine("Items in inventory:");
-    //     foreach (var item in Items)
-    //     {
-    //         item.DisplayItemStats();
-    //         Console.WriteLine("--------------------");
-    //     }
-    // }
 }

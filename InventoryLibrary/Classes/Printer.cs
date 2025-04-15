@@ -1,6 +1,7 @@
 using InventoryLibrary.Interfaces;
 namespace InventoryLibrary.Classes;
 
+// This class might be overkill, but i just made it to practice SRP
 public class Printer
 {
     public static void PrintInventory(IInventory inventory)

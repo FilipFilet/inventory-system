@@ -31,16 +31,4 @@ public class Potion : IItem
             {"Effect", Effect}
         };
     }
-
-    public void DisplayItemStats()
-    {
-        Console.WriteLine($"Item Name: {ItemName}");
-        Console.WriteLine($"Rarity: {Rarity.RarityName}");
-        Console.WriteLine($"Effect: {Effect}");
-        Console.WriteLine("----Attributes");
-        foreach (var attribute in Rarity.Attributes)
-        {
-            Console.WriteLine($"{attribute}");
-        }
-    }
 }

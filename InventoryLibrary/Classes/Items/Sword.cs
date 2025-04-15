@@ -35,17 +35,4 @@ public class Sword : IItem
             {"Damage", Damage}
         };
     }
-
-    public void DisplayItemStats()
-    {
-        Console.WriteLine($"Item Name: {ItemName}");
-        Console.WriteLine($"Rarity: {Rarity.RarityName}");
-        Console.WriteLine($"Durability: {Durability}");
-        Console.WriteLine($"Damage: {Damage}");
-        Console.WriteLine("----Attributes");
-        foreach (var attribute in Rarity.Attributes)
-        {
-            Console.WriteLine($"{attribute}");
-        }
-    }
 }

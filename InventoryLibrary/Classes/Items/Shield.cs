@@ -34,17 +34,4 @@ public class Shield : IItem
             {"DmgNegation", DmgNegation}
         };
     }
-
-    public void DisplayItemStats()
-    {
-        Console.WriteLine($"Item Name: {ItemName}");
-        Console.WriteLine($"Rarity: {Rarity.RarityName}");
-        Console.WriteLine($"Durability: {Durability}");
-        Console.WriteLine($"DmgNegation: {DmgNegation}");
-        Console.WriteLine("----Attributes");
-        foreach (var attribute in Rarity.Attributes)
-        {
-            Console.WriteLine($"{attribute}");
-        }
-    }
 }

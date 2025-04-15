@@ -8,6 +8,7 @@ IItem bow = new Bow("Fiery Longbow", new RareRarity("Chance to shoot two arrows"
 IItem potion = new Potion("Health Potion", new CommonRarity("If health is below 50%, heal additional 100 health"), "Heals 200 health");
 IItem ring = new Ring("Ring of Power", new LegendaryRarity("Increases damage by 20%", "If health is below 30%, increase attack by 30%", "Burns enemies for 10 damage each second, for 20 seconds"), 100);
 
+// Setting up inventory and adding items
 Inventory inventory = new Inventory();
 inventory.AddItem(sword);
 inventory.AddItem(shield);
@@ -15,6 +16,8 @@ inventory.AddItem(bow);
 inventory.AddItem(potion);
 inventory.AddItem(ring);
 
+// Printing inventory
 Printer.PrintInventory(inventory);
 
+// Using items
 sword.UseItem();

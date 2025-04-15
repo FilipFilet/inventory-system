@@ -31,16 +31,4 @@ public class Ring : IItem
             {"Durability", Durability}
         };
     }
-
-    public void DisplayItemStats()
-    {
-        Console.WriteLine($"Item Name: {ItemName}");
-        Console.WriteLine($"Rarity: {Rarity.RarityName}");
-        Console.WriteLine($"Durability: {Durability}");
-        Console.WriteLine("----Attributes");
-        foreach (var attribute in Rarity.Attributes)
-        {
-            Console.WriteLine($"{attribute}");
-        }
-    }
 }
